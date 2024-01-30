@@ -1,0 +1,147 @@
+
+<link rel="styleSheet" href="style.css">
+<link rel="icon" type="image/png" href="C:\Users\WIN 10\Desktop\CSS\sabrlogo.png">
+<body id="box">
+<h1>Sab Restarant</h1>
+<div class="home" >
+    <ul>
+        <li>Home|</a></li>
+        <li>Recipe|</li>
+        <li>Contact</li>
+    </ul>
+</div>
+<div class="Restarant">
+<div class="food4">
+    <img src="indianfood.jpg" width="110px"height="110px">
+    <h3>Naan</h3>
+    <p>$250</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+</div>
+<div class="food4">
+    <img src="noodles.jpg" width="110px" height="110px">
+    <h3>Noodles</h3>
+    <p>$199</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="birya.jpeg" width="110px" height="110px">
+    <h3> Chicken biriyani</h3>
+    <p>$250</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="grill.jpg" width="110px" height="110px">
+    <h3> Grill</h3>
+    <p>$300</p>
+     <!--<h3 style="background-color: black;color: aliceblue;display: inline;text-align: center;">Order Now</h3>-->
+     <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="birya.jpeg" width="110px" height="110px">
+    <h3> Mutton Biriyani</h3>
+    <p>$350</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+
+</div>
+<div class="food4">
+    <img src="meals.jpg" width="110px" height="110px">
+    <h3>Meals</h3>
+    <p>$180</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="dosa.jpg" width="110px" height="110px">
+    <h3>Dosa</h3>
+    <p>$100</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="poori.jpg" width="110px" height="110px">
+    <h3>Poori</h3>
+    <p>$75</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="pongal.jpg" width="110px" height="110px">
+    <h3>Pongal</h3>
+    <p>$80</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="shawar.jpg" width="110px" height="110px">
+    <h3>Shawarma</h3>
+    <p>$140</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="fish.jpg" width="110px" height="110px">
+    <h3>Fish</h3>
+    <p>$150</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<div class="food4">
+    <img src="puttu.jpg" width="110px" height="110px">
+    <h3>Puttu</h3>
+    <p>$120</p>
+    <button class="jappu"onclick="order(event)">Order now</button>
+
+</div>
+<form id="ja">
+ <table>
+    <tr>
+        <td>Product Name<input type="text" id="r"></td>
+    </tr>
+   <tr>
+    <td> Quantity<input type="number"></td>
+   </tr>
+    <tr>
+        <td>
+            Rate<input type="number">
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+
+<div class="sab">
+    <h3 class="sab">Contact 📞 +918666757851</h3>
+    <h3 class="sab">Email 📧 sabrestarent@gmail.com </h3>
+    <p class="sab"><h3 class="sab">Address:</h3>
+        No 2,Anna colony ,<br>Anna Nagar,
+        Madurai-600 005<br>
+        <a href="home.html">Home</a>
+    </p>
+</div>
+</body>
+<script>
+    var mar=document.getElementById("box")
+    var d=document.getElementById("ja")
+    var f=document.querySelector(".restarent")
+
+    function order(event)
+    {
+        mar.position="absolute";
+        mar.style.opacity="0.2";  
+        add()
+    }
+    function add()  
+    {
+        d.style.opacity="1";
+        d.style.position="relative";
+        d.style.display="inline-block";
+        d.style.backgroundColor="white";
+        d.style.color="black";
+        d.textContent=event.target.textContent
+        alert("Your Order placed Successfully") 
+    }
+</script>
